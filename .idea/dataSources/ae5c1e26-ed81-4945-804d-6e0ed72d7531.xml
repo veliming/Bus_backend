@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.20">
+    <root id="1">
+      <ServerVersion>4.4.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="local"/>
+    <schema id="5" parent="1" name="test">
+      <Current>1</Current>
+    </schema>
+    <table id="6" parent="5" name="buses"/>
+    <table id="7" parent="5" name="feedbacks"/>
+    <table id="8" parent="5" name="users"/>
+    <column id="9" parent="6" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="10" parent="6" name="position">
+      <DataType>map(0)|4999544s</DataType>
+    </column>
+    <column id="11" parent="6" name="speed">
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="12" parent="6" name="status">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="13" parent="6" name="type">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="14" parent="6" name="position.latitude">
+      <Position>1</Position>
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="15" parent="6" name="updatetime">
+      <Position>1</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="16" parent="6" name="position.longitude">
+      <Position>2</Position>
+      <DataType>Double(0)|8s</DataType>
+    </column>
+    <column id="17" parent="7" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="18" parent="7" name="status">
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="19" parent="7" name="text">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="20" parent="7" name="user_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="21" parent="7" name="createtime">
+      <Position>1</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="22" parent="7" name="type">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="23" parent="7" name="lastmodifiedtime">
+      <Position>2</Position>
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="24" parent="8" name="_id">
+      <DataType>ObjectId(0)|12s</DataType>
+    </column>
+    <column id="25" parent="8" name="nickname">
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="26" parent="8" name="regtime">
+      <DataType>Date(0)|91s</DataType>
+    </column>
+    <column id="27" parent="8" name="openid">
+      <Position>1</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+    <column id="28" parent="8" name="role">
+      <Position>1</Position>
+      <DataType>Integer|4s</DataType>
+    </column>
+    <column id="29" parent="8" name="schoolid">
+      <Position>2</Position>
+      <DataType>String(0)|12s</DataType>
+    </column>
+  </database-model>
+</dataSource>
